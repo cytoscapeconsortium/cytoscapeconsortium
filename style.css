@@ -1,0 +1,127 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Ensuring the background is white */
+    color: #333; /* Standard text color */
+}
+
+nav {
+    background-color: #f0f0f0; /* Light color for the navigation menu */
+    padding: 1em 15%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.active {
+    font-weight: bold;
+}
+
+header {
+    background-image: url('images/cy3_3_index_page.png'); /* Sets the image as the background */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: 25% 82%; /* Centers the image in the header */
+    color: #fff; /* White text for visibility against the background */
+    text-align: center;
+    padding: 2em 0; /* Adjust the padding to ensure the content fits well with the background */
+}
+
+header h1 {
+    font-weight: 200 !important;
+    font-size: 4.5em !important;
+    margin: 0;
+    color: white; /* #ff7f50; */
+}
+
+header p {
+    color: white;/* #f2f2f2 */
+}
+
+section.about {
+    padding: 3em 15%; /* Increased padding, percentage value gives a margin effect */
+}
+
+section.donate {
+    padding: 0px 15% 3em 15%; /* Increased padding, percentage value gives a margin effect */
+}
+
+section.about p {
+    font-size: 1.2em; /* Adjust font-size as needed */
+    line-height: 1.6; /* For better readability */
+    margin: 0 0 1em; /* Spacing between paragraphs */
+}
+
+/* This additional style will target links in the about section that should stand out */
+section.about a {
+    color: #007bff; /* Bootstrap's default blue for links */
+    text-decoration: none; /* Removing underline from links */
+}
+
+section.about a:hover {
+    text-decoration: underline; /* Underline on hover for better user experience */
+}
+
+footer {
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.light-gray {
+    background-color: #DDDED3;
+    color: #222222;
+}
+
+.officers-board {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.officers, .board {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.officer, .director {
+    border: 1px solid #ddd;
+    padding: 10px;
+    flex-basis: 22%; /* Adjusted for thinner cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-div {
+    background-color: #f0f0f0;
+    width: 80%; /* Thinner */
+    height: 250px; /* Taller */
+    margin-bottom: 10px;
+    position: relative; /* Contain the absolute image */
+    overflow: hidden; /* Ensures the image doesn't escape its bounds */
+}
+
+.photo-div img {
+    width: 100%; /* Adjust width automatically */
+    height: auto; /* Set height to fill the container */
+    position: absolute; /* Positions the image absolutely within the relative parent */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the image horizontally */
+}
